@@ -21,7 +21,7 @@ export default function Landing() {
       data.mname.toLowerCase() === 'lagunay' &&
       data.lname.toLowerCase() === 'arit'
     ) {
-      navigate('confirm');
+      navigate('/confirm');
     } else {
       clearData();
       alert("You are not qualified to proceed to the next question. Please make you inputted your complete name.")
