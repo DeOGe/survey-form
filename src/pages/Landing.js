@@ -15,11 +15,12 @@ export default function Landing() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (
-      data.fname.toLowerCase() === 'sarah' ||
-      data.fname.toLowerCase() === 'sarah monique' &&
       data.mname.toLowerCase() === 'lagunay' &&
-      data.lname.toLowerCase() === 'arit'
+      data.lname.toLowerCase() === 'arit' &&
+      data.fname.toLowerCase() === 'sarah' ||
+      data.fname.toLowerCase() === 'sarah monique'
     ) {
       navigate('/confirm');
     } else {
