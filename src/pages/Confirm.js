@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Sarah from '../Sarah.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function Confirm() {
 const [showImage, setshowImage] = useState(false);
- 
+let navigate = useNavigate();
+
   return (
     <div className=" flex flex-col h-screen ">
       <div className={`absolute bg-opacity-95 w-screen h-screen`} > 
@@ -26,10 +28,10 @@ const [showImage, setshowImage] = useState(false);
             className="mx-2 px-10 py-4 text-white bg-blue-500 rounded-md focus:bg-blue-600 focus:outline-none"
             onMouseEnter={()=> setshowImage(true)}
             onMouseLeave={()=> setshowImage(false)}
+            onClick={() => navigate('/proposal')}
           >
-            <a href="/proposal" >
               YES
-            </a>
+            
           </button>
         </div>
       </div>

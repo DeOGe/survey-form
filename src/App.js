@@ -12,7 +12,7 @@ import {
 } from 'react-router-dom';
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app">
       <Routes>
           <Route exact path='/' element={<Landing />} />
