@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../fireworks.scss';
 export default function Congratulation() {
-    const [fireworks, setFireworks] = useState(false)
+
     return (
         <div className='pyro'>
             <div className='before'>
@@ -14,7 +14,7 @@ export default function Congratulation() {
                 </h1>
             </div>
             <p className='px-40 pt-10'>
-                <strong>Life would be beautiful if we spend it together… </strong> I have thought about it several times, of how our life would be beautiful if we can spend it together forever. I have realized that you are truly the girl that is made for me, and I’m also the man that is made for you. We are both compatible with each other, every moment I have spent with you is the best moment of my life, I never that an angel like you still exist in this world. I promise to be there for you every single moment of your life, I will be by your side. However, right now all that I’m asking you is a beautiful token of my heart.
+                <strong>Life would be beautiful if we spend it together… </strong> I have thought about it several times, of how our life would be beautiful if we can spend it together forever. I have realized that you are truly the girl that is made for me, and I’m also the man that is made for you. We are both compatible with each other, every moment I have spent with you is the best moment of my life, I never imagined that an angel like you still exist in this world. I promise to be there for you every single moment of your life, I will be by your side. However, right now all that I’m asking you is a beautiful token of my heart.
             </p>
             <div class="after">
                 
