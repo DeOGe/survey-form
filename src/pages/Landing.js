@@ -15,17 +15,16 @@ export default function Landing() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (
-      data.mname.toLowerCase() === 'lagunay' &&
-      data.lname.toLowerCase() === 'arit' &&
       data.fname.toLowerCase() === 'sarah' ||
-      data.fname.toLowerCase() === 'sarah monique'
+      data.fname.toLowerCase() === 'sarah monique' &&
+      data.mname.toLowerCase() === 'lagunay' &&
+      data.lname.toLowerCase() === 'arit'
     ) {
       navigate('/confirm');
     } else {
       clearData();
-      alert("You are not qualified to proceed to the next question. Please make you inputted your complete name.")
+      alert("Thank you for participating in this survey, Sadly you have not been chosen to proceed.")
     }
   }
   
